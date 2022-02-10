@@ -1,12 +1,5 @@
 ### Building a sentence using Stacks
 
-**Branch Name:** usingstacksandqueues-prework
-
-**RDE workfows:**
-* `rde wflow run stacksandqueues-prework-stacks-sentencebuilderapp`
-* `rde wflow run stacksandqueues-prework-stacks-sentencebuildertest`
-
-
 Expected time required: 15 min
 
 The included code represents a Sentence Builder app that constructs a sentence using `String`s 

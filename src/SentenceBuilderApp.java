@@ -1,5 +1,3 @@
-package com.amazon.ata.usingstacksandqueues.prework.stacks;
-
 public class SentenceBuilderApp {
 
     /**
