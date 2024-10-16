@@ -1,10 +1,14 @@
+import java.util.Stack;
+
 public class SentenceBuilder {
 
     /**
      * Constructor.
      */
-    public SentenceBuilder() {
+    private Stack<String> nextSentence;
 
+    public SentenceBuilder() {
+        nextSentence = new Stack<>();
     }
 
     /**
@@ -12,6 +16,7 @@ public class SentenceBuilder {
      * @param word to be added to the sentence.
      */
     public void addWord(String word) {
+        nextSentence.add(word);
 
     }
 
@@ -20,6 +25,9 @@ public class SentenceBuilder {
      * @return The word most recently added to the sentence, if any; null, otherwise.
      */
     public String undo() {
+        if (!nextSentence.isEmpty()) {
+           return  nextSentence.pop();
+        }
         return null;
     }
 
@@ -28,6 +36,6 @@ public class SentenceBuilder {
      * @return string representation of the words currently in the sentence.
      */
     public String getSentenceWords() {
-        return "[]";
+        return nextSentence.toString();
     }
 }
